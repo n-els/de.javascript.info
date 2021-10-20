@@ -1,18 +1,17 @@
-# Functions
+# Funktionen
+Sehr oft müssen wir eine ähnliche Handlung an vielen Orten in unserem Skript ausführen.
 
-Quite often we need to perform a similar action in many places of the script.
+Zum Beispiel: wir wollen, wenn ein Besucher sich einloggt, ausloggt oder vielleicht auch etwas anderes tut eine gut-aussehende Nachricht anzeigen.
 
-For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere else.
+Funktionen sind die Haupt - „Bausteine“ eines Programms. Sie erlauben uns den auszuführenden Code mehrmals auszuführen, ohne uns selbst wiederholen zu müssen.
 
-Functions are the main "building blocks" of the program. They allow the code to be called many times without repetition.
+Wir haben bereits einige Beispiele der eingebauten Funktionen, wie `alert(message)`, `prompt(message, default)` und `confirm(question)` kennengelernt. Wir können aber ebenso unsere eigenen Funktionen erstellen.
 
-We've already seen examples of built-in functions, like `alert(message)`, `prompt(message, default)` and `confirm(question)`. But we can create functions of our own as well.
+## Funktionsdeklaration
 
-## Function Declaration
+Um eine neue Funktion zu erstellen nutzen wir eine *Funktionsdeklaration*
 
-To create a function we can use a *function declaration*.
-
-It looks like this:
+Diese sieht so aus:
 
 ```js
 function showMessage() {
