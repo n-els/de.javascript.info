@@ -1,18 +1,17 @@
-# Functions
+# Funktionen
+Sehr oft müssen wir eine ähnliche Handlung an vielen Orten in unserem Skript ausführen.
 
-Quite often we need to perform a similar action in many places of the script.
+Zum Beispiel: wir wollen, wenn ein Besucher sich einloggt, ausloggt oder vielleicht auch etwas anderes tut eine gut-aussehende Nachricht anzeigen.
 
-For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere else.
+Funktionen sind die Haupt - „Bausteine“ eines Programms. Sie erlauben uns den auszuführenden Code mehrmals auszuführen, ohne uns selbst wiederholen zu müssen.
 
-Functions are the main "building blocks" of the program. They allow the code to be called many times without repetition.
+Wir haben bereits einige Beispiele der eingebauten Funktionen, wie `alert(message)`, `prompt(message, default)` und `confirm(question)` kennengelernt. Wir können aber ebenso unsere eigenen Funktionen erstellen.
 
-We've already seen examples of built-in functions, like `alert(message)`, `prompt(message, default)` and `confirm(question)`. But we can create functions of our own as well.
+## Funktionsdeklaration
 
-## Function Declaration
+Um eine neue Funktion zu erstellen nutzen wir eine *Funktionsdeklaration*
 
-To create a function we can use a *function declaration*.
-
-It looks like this:
+Diese sieht so aus:
 
 ```js
 function showMessage() {
@@ -20,13 +19,14 @@ function showMessage() {
 }
 ```
 
-The `function` keyword goes first, then goes the *name of the function*, then a list of *parameters* between the parentheses (comma-separated, empty in the example above) and finally the code of the function, also named "the function body", between curly braces.
-
+Das `function` Schlüsselwort kommt als erstes, dann der *Name der Funktion*, darauf folgt eine Liste von *Parametern* zwischen den Klammern (Komma-getrennt, leer im obigen Beispiel) 
+und als letztes folgt der Code der Funktion, auch „Funktionskörper“ genannt, zwischen den geschweiften Klammern.
 ```js
-function name(parameters) {
-  ...body...
+function name(Parameter) {
+  ...Körper...
 }
 ```
+
 
 Our new function can be called by its name: `showMessage()`.
 
@@ -43,11 +43,12 @@ showMessage();
 */!*
 ```
 
-The call `showMessage()` executes the code of the function. Here we will see the message two times.
+Der Aufruf `showMessage()` führt den Code der Funktion aus. Hier werden wir die Nachricht zweimal sehen.
 
-This example clearly demonstrates one of the main purposes of functions: to avoid code duplication.
+Dieses Beispiel demonstriert deutlich einen der Hauptzwecke von Funktionen: doppelten Code verhindern.
 
-If we ever need to change the message or the way it is shown, it's enough to modify the code in one place: the function which outputs it.
+Falls wir irgendwann die Nachricht oder die Art wie sie angezeigt wird verändern müssen, reicht es aus den Code an einem Ort zu verändern:  die Funktion welche sie ausgibt.
+
 
 ## Local variables
 
@@ -68,6 +69,8 @@ showMessage(); // Hello, I'm JavaScript!
 
 alert( message ); // <-- Error! The variable is local to the function
 ```
+
+
 
 ## Outer variables
 
